@@ -12,6 +12,9 @@ formulario.addEventListener('submit', function(e) {
         const containerMensagemSucesso = document.querySelector('.success-message')
         containerMensagemSucesso.innerHTML = mensagemSucesso
         containerMensagemSucesso.style.display = 'block'
+        setTimeout(function() {
+            containerMensagemSucesso.style.display = 'none'
+        }, 5000)
     } else {
         campoA.style.border = '2px solid red'
         document.querySelector('.error-message').style.display = 'block'
@@ -20,5 +23,3 @@ formulario.addEventListener('submit', function(e) {
         containerMensagemErro.style.display = 'block'
     }
 })
-
-console.log(formulario)
