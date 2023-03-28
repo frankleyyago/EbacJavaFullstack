@@ -9,8 +9,12 @@ $(document).ready(function() {
         console.log(novaTarefaCadastrada)
         const novaTarefa = $('<li></li>')
         console.log(novaTarefa)
-        $(`${novaTarefaCadastrada}`).appendTo(novaTarefa)
+        novaTarefa.text(novaTarefaCadastrada)
         $(novaTarefa).appendTo('ul')
         $('#nova-tarefa').val('')
     })
+
+        $('ul').on('click', 'li', function() {
+            $(this).toggleClass('concluida')
+        })
 })

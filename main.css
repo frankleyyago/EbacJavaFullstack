@@ -47,9 +47,22 @@ button {
 }
 
 ul li {
+    display: flex;
     font-size: 20px;
+    /* list-style: none; */
+    justify-content: center;
+    cursor: pointer;
+    
 }
 
 input:focus {
     outline: none;
+}
+
+#novaTarefaCadastrada {
+    color: red;
+}
+
+.concluida {
+    text-decoration: line-through;
 }
