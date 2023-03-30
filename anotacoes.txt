@@ -1,0 +1,2 @@
+- Front-end é responsável pela parte visual que mantem contato direto com usuário
+- Back-end é responsável pela parte de infraestrutura da pagina e dos softweres
