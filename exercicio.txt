@@ -1,0 +1,7 @@
+O HTML é uma linguagem de marcação, serve para distinguir elementos sintaticamente.
+
+O CSS é uma linguagem para dar estilo, como formatação, cor, fonte etc.
+
+O javascript Ã© uma linguagem de programação otimizada para web, como java, python etc.
+
+A união dos três possibilita construir paginas web com diferentes funcionalidades e estilos visuais
