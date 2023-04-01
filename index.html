@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Carousel</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Inicio cabeçalho -->
+
+    <header>
+        <div class="container">
+            <h1 class="titulo">ZooBrazil</h1>          
+            <ul class="menu">
+                <li>
+                    Fauna
+                </li>
+                <li>
+                    Flora
+                </li>
+                <li>
+                    Biodiversidade
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Fim cabeçalho -->
+
+    <!-- Inicio carousel -->
+
+    <div class="container-carousel">
+        <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval='3000' class="carousel-item active">
+                    <img class="d-block w-100" src="./source/imagem 1.jpg">
+                    <div class="carousel-caption">
+                        <h2>Tigre Branco</h2>
+                    </div>
+                </div>
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img id="tartaruga" class="d-block w-100" src="./source/imagem 2.jpg">
+                    <div class="carousel-caption">
+                        <h2>Tartaruga Marinha</h2>
+                    </div>
+                </div>
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="d-block w-100" src="./source/imagem 3.jpg">
+                    <div class="carousel-caption">
+                        <h2>Raposa Vermelha</h2>
+                    </div>
+                </div>
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="d-block w-100" src="./source/imagem 4.jpg">
+                    <div class="carousel-caption">
+                        <h2>Cavalo Selvagem</h2>
+                    </div>
+                </div>
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="d-block w-100" src="./source/imagem 5.jpg">
+                    <div class="carousel-caption">
+                        <h2>Onça Pintada</h2>
+                    </div>
+                </div>
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="d-block w-100" src="./source/imagem 6.jpg">
+                    <div class="carousel-caption">
+                        <h2>Tubarão Branco</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target='#carousel' data-bs-slide='prev' class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target='#carousel' data-bs-slide='next' class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target='carousel' class="active" data-bs-slide-to="5"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim carousel -->
+
+    <!-- Inicio cards -->
+
+    <div class="container-cards">
+        <div class="cabecalho">
+            <h2>Leia os cards</h2>
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 1.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Tigre Branco</h4>
+                        <p class="card-text">O tigre branco é uma variante do tigre comum que tem uma mutação genética que faz com que sua pelagem seja branca em vez de laranja. Eles são encontrados principalmente na Índia e são considerados raros e em perigo de extinção. O tigre branco vive em média 20 anos e pesa cerca de 300 kg. Eles têm cerca de 1 metro de altura e 3 metros de comprimento, sendo 80 cm só de cauda. Sua pelagem não é totalmente branca, parte dela é cinza ou marrom e a maioria desses tigres tem olhos azuis</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 2.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Tartaruga Marinha</h4>
+                        <p class="card-text">As tartarugas-marinhas são répteis que habitam mares tropicais e subtropicais em todo o mundo. Elas têm um casco rígido que as protege de predadores, das variações climáticas e pressões ambientais. A porção dorsal do casco é denominada carapaça e a porção ventral, plastrão. As tartarugas-marinhas diferem de outros répteis por apresentarem um casco rígido que as protege de predadores, das variações climáticas e pressões ambientais.</p>
+                        <a href="#tartaruga" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 3.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Raposa Vermelha</h4>
+                        <p class="card-text">A raposa-vermelha é um mamífero carnívoro pertencente à família dos canídeos. Ela é facilmente reconhecível por seu pelo avermelhado e sua aparência esbelta. A raposa-vermelha apresenta variações significativas no tamanho, dependendo do indivíduo, sexo, idade e origem geográfica. Em média, os adultos medem 35–40 cm de altura na cernelha e 45–90 cm de comprimento corporal, com a cauda medindo entre 30–55,5 cm.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>       
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 4.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Cavalo Selvagem</h4>
+                        <p class="card-text">Cavalos selvagens são animais que geralmente vivem livremente e frequentemente se encontram sob ameaça de extinção. Eles não são animais selvagens no sentido de um animal sem ancestrais domesticados, embora sejam selvagens no sentido de geralmente viverem livremente Os cavalos selvagens estão protegidos ao abrigo da lei dos Estados Unidos, mas desapareceram de vários estados, onde havia populações. As poucas centenas de cavalos selvagens sobrevivem em Alberta e Colúmbia Britânica, no Canadá.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 5.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Onça Pintada</h4>
+                        <p class="card-text">A onça-pintada é um felino de porte grande, com peso variando de 56 a 92 quilos, podendo chegar a 158 quilos, e comprimento variando de 1,12 a 1,85 m sem a cauda, que é relativamente curta É um animal solitário e territorialista que vive em florestas tropicais e savanas da América Central e do Sul A onça-pintada é um animal carnívoro e se alimenta de uma grande variedade de presas, incluindo peixes, répteis, aves e mamíferos.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="./source/imagem 6.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Tubarão Branco</h4>
+                        <p class="card-text">O tubarão branco é um peixe da família Lamnidae conhecido como tubarão-anequim, cação-anequim ou cação-branco. É o maior peixe predador que existe atualmente e pode caçar grandes mamíferos marinhos que o excedem em peso. É notável por seu tamanho, com indivíduos do sexo feminino maiores crescendo até 6,1 metros de comprimento e 1 905–2 268 quilos de peso na maturidade.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>31/03/2023 às 10:47:23</time>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim cards -->
+
+    <!-- Inicio rodapé -->
+
+    <footer>
+        <div class="container">
+            <p>ZooBrazil - &copy Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Fim rodapé -->
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
