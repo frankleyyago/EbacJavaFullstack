@@ -1,0 +1,68 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: blue;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: blue;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover  {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color:rgb(235, 235, 255);
+}
+
+.section-title {
+    font-family: 'Exo 2', sans-serif;
+}
+
+#projetos {
+    background-color:rgb(235, 235, 255);
+}
+
+#sobre-o-escritorio, #cardapio {
+    background-color:rgb(235, 235, 255);
+}
+
+.text-colored {
+    color: blue;
+}
+
+.nav-projetos .nav-link.active,
+#fale-conosco button {
+    background-color: blue;
+    color: #fff;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    max-width: 100%;
+    width: 1320px;
+    height: 500px;
+}
+
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
