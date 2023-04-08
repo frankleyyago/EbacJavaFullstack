@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/smacss/base.css">
+    <link rel="stylesheet" href="/smacss/layout.css">
+    <link rel="stylesheet" href="/smacss/module.css">
+    <link rel="stylesheet" href="/smacss/theme-a.css">
+    <link rel="stylesheet" href="/smacss/theme-b.css">
+</head>
+<body class="theme-a">
+    <div id="header">
+        <div class="container">
+            <h1 class="title">Nome do site</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="accordion">
+            <header class="accordion-header">
+                Nome do accordion
+            </header>
+            <p class="accordion-content">
+                Conteúdo
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="message message-is-error">
+                <h5 class="title-message">Atenção</h5>
+                <p class="content-message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsum exercitationem, ullam tempore unde sunt ea commodi error quidem expedita amet repudiandae, quis nam corrupti quod. Deleniti quaerat non necessitatibus.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const accordions = document.querySelectorAll('.accordion-header')
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener('click', function(e) {
+                e.target.parentNode.classList.toggle('is-open')
+            })
+        }
+    </script>
+</body>
+</html>
