@@ -1,23 +1,24 @@
+//criando um array com o nome e nota dos alunos
 const students = [
-    {name: 'João', grade: '7.5'},
-    {name: 'Maria', grade: '5.5'},
-    {name: 'Pedro', grade: '7.0'},
-    {name: 'Ana', grade: '9.5'},
+    {name: 'João', grade: 7.5},
+    {name: 'Maria', grade: 5.5},
+    {name: 'Pedro', grade: 7.0},
+    {name: 'Ana', grade: 9.5},
+    {name: 'Joana', grade: 1.5},
+    {name: 'Guilherme', grade: 0.0},
+    {name: 'Victor', grade: 3.5},
 ]
 
-function filterStudents(minGrade, studentsList) {
-    const approvedStudents = []
+//criando uma constante com a nota mínima dos alunos aprovados
+const minGrade = 6.0
 
-    for (let i = 0; i < studentsList.length; i++) {
-        const student = studentsList[i]
-
-        if (student.grade >= minGrade) {
-            approvedStudents.push(student)
-        }
-    }
-
-    return approvedStudents
+//criando o filtro de alunos com nota igual ou superior a nota mínima
+function studentsFilter(item) {
+    return item.grade >= minGrade
 }
 
-const approvedStudents = filterStudents(6, students)
+//criando constante para executar a função filtro
+const approvedStudents = students.filter(studentsFilter)
+
+//logando
 console.log(approvedStudents)
