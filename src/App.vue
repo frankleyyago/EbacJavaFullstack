@@ -1,28 +1,45 @@
 <script setup>
-  let numero1 = 0;
-  let numero2 = 0;
-  let operacao = "somar";
-  let resultado = 0;
+import { reactive } from 'vue';
 
-  function calcular() {
-    switch (operacao) {
-      case "somar":
-        resultado = numero1 + numero2;
-        break;
-      case "subtrair":
-        resultado = numero1 - numero2;
-        break;
-      case "multiplicar":
-        resultado = numero1 * numero2;
-        break;
-      case "dividir":
-        resultado = numero1 / numero2;
-        break;
-    }
+
+const estado = reactive ({
+  numero1: '',
+  numero2: '',
+  operador: 'somar',
+})
+
+const operadores = {
+  somar: '+',
+  subtrair: '-',
+  multiplicar: '*',
+  dividir: '/',
+}
+
+function resultado() {
+  const x = Number(estado.numero1)
+  const y = Number(estado.numero2)
+  const op = operadores[estado.operador]
+  let res
+
+  switch (op) {
+    case operadores.somar:
+      res = x + y
+      break
+    case operadores.subtrair:
+      res = x - y
+      break
+      case operadores.multiplicar:
+      res = x * y
+      break
+    case operadores.dividir:
+      res = x / y
+      break
+    default:
+      res = ''
+      break
   }
-  watch([() => numero1, () => numero2, () => operacao], () => {
-    calcular();
-  });
+  return res
+}
 </script>
 
 <template>
@@ -36,10 +53,10 @@
     <form class="p-5 bg-light rounded-3">
       <div class="row">
         <div class="col-md-1">
-          <input class="form-control" type="number" placeholder="X" v-model="numero1">
+          <input class="form-control" type="number" placeholder="X" v-model="estado.numero1">
         </div>
         <div class="col-md-1">
-          <select class="form-control" v-model="operacao">
+          <select class="form-control" v-model="estado.operador">
             <option value="somar">+</option>
             <option value="subtrair">-</option>
             <option value="multiplicar">x</option>
@@ -47,10 +64,10 @@
           </select>
         </div>
         <div class="col-md-1">        
-          <input class="form-control" type="number" placeholder="Y" v-model="numero2">
+          <input class="form-control" type="number" placeholder="Y" v-model="estado.numero2">
         </div>
-        <div class="col-md-1">
-          <h2>Resultado: {{ resultado }}</h2>
+        <div class="col-md-6">
+          <h2> = {{ resultado() }}</h2>
         </div>
       </div>
     </form>
