@@ -1,0 +1,21 @@
+passo a passo apos acordar
+E dia de de semana?
+1 - sim
+	a - levantar da cama as 07:00h
+	b - vestir a roupa da academia
+	c - ir para cozinha
+	d - preparar cafe
+	e - tomar cafe
+	f - escovar os dentes e pentear cabelo
+	g - ir para academia
+	h - fimalgoritmo
+2 - nao
+	a - levantar da cama as 09:00h
+	b - vestir roupa
+	c - ir para cozinha
+	d - preparar cafe
+	e - tomar cafe
+	f - escovar os dentes e pentear cabelo
+	g - ir para casa da Karol
+	h - fimalgoritmo
+	
